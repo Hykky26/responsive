@@ -63,10 +63,9 @@ h2{
     font-size: 40px;
     text-align: center;
     color: rgb(0, 0, 0);
-
 }
 h2:hover{
-    color: rgb(33, 110, 52);
+    color: rgb(189, 59, 16);
 }
 .oeuvres {
     justify-content: center;
