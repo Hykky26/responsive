@@ -89,6 +89,7 @@ h3{
     gap: 50px;
 } */
 p {
+    text-align: center;
     color: rgb(0, 0, 0);
 }
 
@@ -139,18 +140,8 @@ h4 {
 
 #contacter {
     font-size: 25px;
-    margin-left: 200px;
+    margin-left: 230px;
     padding-bottom: 30px;
-}
-
-.encadrer-un-contenu {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.encadrer-un-contenu {
-    border: 1px solid black;
-    padding: 5px;
 }
 
 .image_text {
@@ -209,4 +200,12 @@ input[type="submit"] {
     margin-right: 100px;
     font-size: 18px;
     text-align: center;
+}
+.réseaux{
+    margin-left: 40px;
+    padding: 20px;
+}
+#fleche{
+    margin-right: 900px;
+    font-size: 80px;
 }
