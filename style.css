@@ -6,7 +6,7 @@
 
 .nav {
     width: 100%;
-    position: fixed;
+    position: relative;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -58,36 +58,54 @@ a:hover {
     border-color: rgb(33, 110, 52);
     color: rgb(33, 110, 52);
 }
-h2{
+
+h2 {
     margin-top: 300px;
+    margin-bottom: 200px;
     font-size: 40px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
-h2:hover{
+
+h2:hover {
     color: rgb(104, 85, 79);
 }
-.oeuvres {
+
+/* #oeuvres {
     justify-content: center;
     margin-top: 100px;
-    height: 400px;
+    margin-bottom: 100px;
+    height: 50px;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 100px 100px 100px 100px;
-    gap: 70px;
-}
-p{
+    grid-template-columns: 200px 200px 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    gap: 50px;
+} */
+p {
     color: rgb(0, 0, 0);
 }
-.oeuvres2{
+
+.oeuvres2 {
     max-width: 50%;
     display: grid;
     grid: repeat(4, 400px) / auto-flow 700px;
 }
-.oeuvres3{
+
+.oeuvres3 {
     margin-left: 150px;
     max-width: 100%;
     display: flex;
 }
 
+#events {
+    height: 1200px;
+}
+
+#a_propos {
+    height: 1200px;
+}
+
+#contact {
+    height: 1200px;
+}
