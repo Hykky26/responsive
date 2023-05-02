@@ -28,14 +28,14 @@
         </section>
 
         <section id="oeuvres">
-            <h2><em>Oeuvres</em></h2>
+            <h2>Oeuvres</h2>
             <div class="oeuvres3">
                 <section class="oeuvres2">
                     <div class="tableau"><a href="oeuvre.html"><img class="tab_1" src="img/tableau_1.png" alt="tableau_1" height="300px"></a>
                         <p>Huile sur toile - 750€</p>
                         <p class="acheter">Acheter</p>
                     </div>
-                    <div class="tableau"><img class="tab_1"src="img/tableau_2.png" alt="tableau_2" height="300px">
+                    <div class="tableau"><a href="oeuvre2.html"><img class="tab_1"src="img/tableau_2.png" alt="tableau_2" height="300px"></a>
                         <p>Huile sur toile - 550€</p>
                         <p class="acheter">Acheter</p>
                     </div>
@@ -75,7 +75,7 @@
             <p class="expoPresentation">J'ai la chance de pouvoir exposer très régulièrement dans des lieux très
                 différents parfois prestigieux où j'ai le plaisir de partager, échanger avec d'autres artistes mais
                 aussi
-                surtout le public.
+                surtout le public.<br>
                 Ainsi je vous propose une liste non exhaustive des évenements à venir et ceux auxquels j'ai pu
                 participer.</br>
                 Vous souhaitez être informé de mes prochaines dates, laissez-moi votre email : </p>
@@ -166,7 +166,7 @@
             <p class="jules_lanctot">Je m'appelle Jules Lanctot j'ai 63 ans, je suis artiste peintre depuis 1970, je partage mes oeuvres sur ce site afin de permettre leur acquisition au plus grand nombre et ainsi partager ma passion. La livraison est disponible pour toute l'europe et je garantis la protection de mes oeuvres à laquelle j'apporte le plus grand soin.
             </p><br><br>
             <div class="image_text">
-                <div><img width="400" src="img/Jules_Lanctot.jpg"></div>
+                <div><img id="jules"width="400" src="img/Jules_Lanctot.jpg"></div>
                 <div><br><br>
                     <p>47, Avenue Millies Lacroix
                         78990 ÉLANCOURT</p><br>
@@ -182,13 +182,10 @@
         <section id="contact">
             <h2>Contact</h2>
             <h4 id="contacter">Me contacter</h4> 
-            <p id="fleche">⬇️</p>
             <form action="#" method="POST">
                 <div id="identité">
                     <div>
                         <label for="name"></label>
-                        <!-- Le name est obligatoire pour pouvoir récupérer la valeur en PHP plus tard -->
-                        <!-- Label est obligatoire pour lier l'input au label et permettre une utilisation plus -->
                         <input type="text" id="name" placeholder="  Nom"="user_name">
                     </div><br>
                     <div>
@@ -205,7 +202,6 @@
                     </div>
                 </div>
             </form>
-            </center>
         </section>
     </main>
 </body>

@@ -61,6 +61,7 @@ a:hover {
 }
 
 h2 {
+    padding-top: 50px;
     margin-top: 200px;
     margin-bottom: 150px;
     font-size: 40px;
@@ -68,26 +69,11 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-h2:hover {
-    color: rgb(104, 85, 79);
-}
 h3{
     text-align: center;
     font-size: 40px;
     margin: 50px;
 }
-
-/* #oeuvres {
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 50px;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 200px 200px 300px 300px 300px 300px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    gap: 50px;
-} */
 p {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -223,4 +209,32 @@ input[type="submit"] {
 }
 .tab_1:hover{
    border: 10px solid black;
+}
+.expo:hover{
+    opacity: 0.4;
+}
+#jules{
+    border-radius: 25px;
+}
+.page_tableau{
+    display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+h4{
+    font-size: 40px;
+    padding-top: 50px;
+}
+button{
+    border-color: rgb(93, 93, 93);
+    width: 20%;
+    height: 25px;
+    border-radius: 7px;
+    background-color: #d7d7d6;
+}
+button:hover{
+    background-color: grey;
 }
