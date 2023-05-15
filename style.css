@@ -1,26 +1,41 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body,
+main {
+    width: 100vw;
+}
+
 .nav {
-    position: fixed;
     width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 50px;
-    gap: 280px;
     background-color: lightgray;
     opacity: 0.55;
 }
 
+.navList {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 h1 {
     font-size: 25px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.texte_accueil {
     text-align: center;
 }
 
@@ -35,13 +50,49 @@ a:hover {
 
 .accueil {
     padding-top: 140px;
-    height: 500px;
+    /* height: 500px; */
     background-color: white;
+    width: 100%;
+}
+
+
+#oeuvres {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .tableau_1 {
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.tableau_1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tableau {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+
+.firstLink {
+    width: 100%;
+    text-align: center;
+}
+
+.tab_1 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .texte_accueil {
@@ -51,83 +102,80 @@ a:hover {
 
 .acheter {
     width: 70px;
+    margin-top: 10px;
+    padding: 5px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
+    text-align: center;
 }
 
 .acheter:hover {
     border-color: rgb(33, 110, 52);
-    color: rgb(33, 110, 52);
+    color: #FFF;
+    background-color: #d7d7d6;
 }
 
-h2 {
-    padding-top: 50px;
-    margin-top: 200px;
-    margin-bottom: 150px;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
 
 h3 {
     text-align: center;
-    font-size: 40px;
+    font-size: 3rem;
     margin: 50px;
 }
 
 p {
-    text-align: center;
     color: rgb(0, 0, 0);
+
 }
 
-.oeuvres2 {
-    max-width: 50%;
-    display: grid;
-    grid: repeat(4, 400px) / auto-flow 700px;
+.description {
+    padding-top: 10px;
 }
 
-.oeuvres3 {
-    margin-left: 150px;
-    max-width: 100%;
+
+.container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#events {
+    width: 100%;
 }
 
 #contact {
-    height: 700px;
+    width: 100%;
 }
 
 #identité {
-    width: 700px;
-    margin-left: 200px;
-    height: 200px;
-    border: solid 1px lightgrey;
-    padding: 40px 0 0 30px;
+    width: 80%;
+    padding: 20px;
     background-color: lightgrey;
-    opacity: 0.8;
     border-radius: 25px;
-
 }
 
 input,
 textarea {
+    padding: 5px;
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.futurParagraph {
+    padding: 8px;
+    font-size: 1.3rem;
 }
 
 h4 {
-    padding-left: 20px;
-    margin-left: 20px;
-    margin-top: 0;
+    text-align: center;
     margin-bottom: 0;
-    width: 180px;
-    box-sizing: content-box;
+    width: 100%;
     font-weight: lighter;
 }
 
 #contacter {
-    font-size: 25px;
-    margin-left: 230px;
+    font-size: 2rem;
     padding-bottom: 30px;
 }
 
@@ -141,44 +189,62 @@ h4 {
 }
 
 figcaption {
-    width: 300px;
     text-align: center;
+    font-size: 1.3rem;
+    padding: 8px;
+
 }
 
 .expo {
-    width: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .expo1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-bottom: 30px;
 }
-.expoPresentation,
-form, 
-li {
-    text-align: justify;
-    margin: 30px;
-    list-style-type: none;
+
+.expo2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
 }
-img {
-    border: none;
-    border: 0;
+
+.expo3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+
 }
 
 .expoPresentation,
-form {
-    text-align: justify;
+form,
+li {
     margin: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ::placeholder {
     font-style: italic;
 }
 
-input[type="email"] {
+#email {
     width: 300px;
 }
 
@@ -187,6 +253,10 @@ input[type="submit"] {
     width: auto;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.inputForm {
+    width: 100%;
 }
 
 .jules_lanctot {
@@ -200,7 +270,13 @@ input[type="submit"] {
     margin-left: 40px;
     padding: 20px;
 }
-.réseaux:hover{
+
+.menuBurger {
+    width: 100px;
+    display: none;
+}
+
+.réseaux:hover {
     border: none;
     opacity: 0.7;
 }
@@ -218,12 +294,19 @@ input[type="submit"] {
     align-content: stretch;
 }
 
-img:hover{
+img:hover {
     border: 10px solid black;
 }
 
 #jules {
     border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.jules_lanctot {
+    margin-bottom: 50px;
 }
 
 .page_tableau {
@@ -253,11 +336,105 @@ button:hover {
 }
 
 .envoyer {
-    width: 80px;
-    margin-left: 210px;
+    width: 50%;
+    margin-top: 25px;
 }
-.nomGalerie{
+
+.nomGalerie {
     padding-top: 50px;
     margin-bottom: 150px;
     font-size: 40px;
+}
+
+.figureExpo {
+    width: 30%;
+    height: 100%;
+}
+
+.futurExpo {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .image_text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reseau {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .phoneNumber {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    figcaption {
+        display: none;
+    }
+
+
+    .expo {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .futurParagraph {
+        display: none;
+    }
+
+    .expo1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expo2 {
+        flex-direction: column;
+    }
+
+    .expo3 {
+        flex-direction: column;
+    }
+
+    .figureExpo {
+        width: 100%;
+    }
+
+    .futurExpo {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .navList {
+        display: none;
+    }
+
+    .menuBurger {
+        display: block;
+    }
+
+    .description {
+        display: none;
+    }
+
+    #oeuvres {
+        flex-direction: column;
+    }
+
 }
